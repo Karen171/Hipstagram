@@ -1,0 +1,17 @@
+
+.formContainer {
+    margin-top: 50px;
+    display: flex;
+    .avatarContainer {
+        border-radius: 50%;
+        margin-right: 50px;
+        img {
+            width: 15vw;
+        }
+    }
+}
+
+
+.button {
+    width: 100%;
+}

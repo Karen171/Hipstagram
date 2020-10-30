@@ -1,0 +1,57 @@
+.header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 30px 0 30px;
+    display: flex;
+    align-items: center;
+    background-color: #4D88ED;    
+
+    &__message {
+        position: absolute;
+        left: calc(50% - (77px / 2));
+        align-self: center;
+        margin: 0;
+        font-size: 1.7em;
+        color: #fff;
+    }
+
+    .glassIcon {
+        height: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 20px;
+    }
+    
+
+    .searchField {
+
+       input {
+        width: 300px;
+        padding: 5px 5px 5px 30px;
+        margin: 0 15px 0;
+       }
+
+       .glassIcon {
+           height: 20px;
+           position: absolute;
+           top: 50%;
+           transform: translateY(-50%);
+           left: 20px;
+       }
+    }
+
+    .icons {
+        display: flex;
+        position: absolute;
+        right: 10px;
+
+        img {
+            height: 30px;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+    }
+}

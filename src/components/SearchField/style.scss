@@ -1,0 +1,44 @@
+.header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4D88ED;    
+
+    &__message {
+        position: absolute;
+        left: calc(50% - (77px / 2));
+        align-self: center;
+        margin: 0;
+        font-size: 1.7em;
+        color: #fff;
+    }
+
+    .searchField {
+
+       input {
+        width: 300px;
+        padding: 5px 5px 5px 30px;
+        margin: 15px;
+       }
+
+       .glassIcon {
+           height: 20px;
+           position: absolute;
+           top: 19px;
+           left: 20px;
+       }
+    }
+
+    .icons {
+        display: flex;
+
+        img {
+            height: 30px;
+            margin: 0 10px;
+        }
+    }
+}

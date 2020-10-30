@@ -1,0 +1,100 @@
+.outterWrapper {
+    background-color: #F3F2F2;
+    height: auto;
+}
+
+
+.postsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+    .feedContainer {
+        position: relative;
+        margin: 20px 0;
+        width: 30vw;
+        height: 62vh;
+        border-radius: 10px;
+        box-shadow: 10px 10px 34px -2px rgba(0,0,0,0.75);
+        overflow: hidden;
+        @media screen and (max-width: 1000px){
+            width: 75%;
+            @media screen and (max-width: 768px){
+                width: 100%;
+            }
+        }
+        
+
+        .imageContainer {
+            position: relative;
+            margin: 0 0 15px;
+            height: 50vh;
+            width: 30vw;
+            overflow: hidden;
+            @media screen and (max-width: 1000px){
+                width: 100%;
+                // @media screen and (max-width: 768px){
+                //     width: 100%;
+                // }
+            }
+            > img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 100%;
+            }
+        }
+        
+
+        .addComment {
+            position: relative;
+
+            div {
+                display: flex;
+                margin-bottom: 20px;
+
+                span {
+                    padding-left: 10px;
+
+                    img {
+                        margin: 0 5px;
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+
+                p {
+                    margin: 0 10px 0 ;
+                    align-self: center;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background-color: #D9D9D9;
+                }
+            }
+           
+            
+            input {
+                margin: 0;
+                border: none;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .feedContainer{
+      width: 100%;
+    }
+}

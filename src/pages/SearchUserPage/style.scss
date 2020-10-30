@@ -1,0 +1,46 @@
+.outterWrapper {
+    background-color: #F3F2F2;
+}
+
+section {
+    width: 100%;
+}
+
+.userWrapper {
+    width: 100%;
+    margin: 10px 0 10px;
+    padding: 5px 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    p {
+        font-size: 1.5em;
+    }
+
+    div {
+        position: relative;
+        min-height: 10vh;
+        min-width: 5vw;
+        overflow: hidden;
+        border-radius: 50%;
+        img {
+            width: 6vw;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            pointer-events: none;
+        }
+    }
+    
+
+    .button {
+        width: 150px;
+        margin: 5px 0 5px;
+    }
+}
